@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><title>TurboCraft // Maya Shankar — Hot Wheels Portfolio</title><meta name="description" content="Maya Shankar — Final Year CSE Student. Portfolio in a Hot Wheels die-cast racing theme."/><link rel="icon" href="assets/img/logo.png"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Work+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-secondary-fixed": "#390c00",
+          "on-tertiary-fixed": "#231b00",
+          "on-secondary-container": "#511500",
+          "on-surface-variant": "#e9bcb6",
+          "outline": "#af8782",
+          "on-error-container": "#ffdad6",
+          "on-primary": "#690003",
+          "surface-container-lowest": "#0c0e12",
+          "surface-container-high": "#282a2e",
+          "on-secondary-fixed-variant": "#822700",
+          "surface-tint": "#ffb4aa",
+          "primary-fixed-dim": "#ffb4aa",
+          "inverse-primary": "#c0000d",
+          "on-tertiary": "#3b2f00",
+          "tertiary-fixed-dim": "#ecc200",
+          "tertiary-container": "#cca800",
+          "on-primary-fixed-variant": "#930007",
+          "tertiary-fixed": "#ffe07c",
+          "inverse-on-surface": "#2f3035",
+          "outline-variant": "#5f3f3b",
+          "background": "#111317",
+          "surface": "#111317",
+          "primary": "#ffb4aa",
+          "error": "#ffb4ab",
+          "on-primary-fixed": "#410001",
+          "secondary-fixed": "#ffdbcf",
+          "on-primary-container": "#fff7f6",
+          "inverse-surface": "#e2e2e8",
+          "secondary-container": "#ff5708",
+          "on-tertiary-container": "#4d3e00",
+          "on-background": "#e2e2e8",
+          "secondary-fixed-dim": "#ffb59c",
+          "surface-container-highest": "#333539",
+          "surface-dim": "#111317",
+          "surface-container": "#1e2024",
+          "primary-fixed": "#ffdad5",
+          "tertiary": "#ecc200",
+          "surface-bright": "#37393e",
+          "error-container": "#93000a",
+          "secondary": "#ffb59c",
+          "on-secondary": "#5c1900",
+          "on-tertiary-fixed-variant": "#564500",
+          "surface-container-low": "#1a1c20",
+          "surface-variant": "#333539",
+          "primary-container": "#e60012",
+          "on-surface": "#e2e2e8",
+          "on-error": "#690005"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        "spacing": {
+          "margin-md": "3rem",
+          "space-md": "1rem",
+          "space-sm": "0.5rem",
+          "space-2xl": "4rem",
+          "gutter-sm": "1rem",
+          "space-xl": "2.5rem",
+          "gutter": "1.5rem",
+          "gutter-lg": "2rem",
+          "margin": "1.5rem",
+          "margin-lg": "5rem",
+          "space-xs": "0.25rem",
+          "space-lg": "1.5rem"
+        },
+        "fontFamily": {
+          "headline-lg": ["Anton"],
+          "headline-md": ["Anton"],
+          "label-numeric": ["Work Sans"],
+          "display-hero-mobile": ["Anton"],
+          "body-md": ["Work Sans"],
+          "label-caps": ["Anton"],
+          "body-sm": ["Work Sans"],
+          "title-lg": ["Anton"],
+          "body-lg": ["Work Sans"],
+          "headline-sm": ["Anton"],
+          "headline-lg-mobile": ["Anton"],
+          "display-hero": ["Anton"]
+        },
+        "fontSize": {
+          "headline-lg": ["48px", { "lineHeight": "52px", "letterSpacing": "0.03em", "fontWeight": "400" }],
+          "headline-md": ["32px", { "lineHeight": "36px", "letterSpacing": "0.04em", "fontWeight": "400" }],
+          "label-numeric": ["12px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "600" }],
+          "display-hero-mobile": ["48px", { "lineHeight": "52px", "letterSpacing": "0.02em", "fontWeight": "400" }],
+          "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }],
+          "label-caps": ["14px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "400" }],
+          "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }],
+          "title-lg": ["20px", { "lineHeight": "24px", "letterSpacing": "0.05em", "fontWeight": "400" }],
+          "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+          "headline-sm": ["24px", { "lineHeight": "28px", "letterSpacing": "0.04em", "fontWeight": "400" }],
+          "headline-lg-mobile": ["32px", { "lineHeight": "36px", "letterSpacing": "0.04em", "fontWeight": "400" }],
+          "display-hero": ["80px", { "lineHeight": "84px", "letterSpacing": "0.02em", "fontWeight": "400" }]
+        }
+      },
+    },
+  }</script></head><body class="bg-background font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_12px_32px_-4px_rgba(230,0,18,0.25)]"><div class="w-full px-gutter-sm md:px-gutter lg:px-gutter-lg h-20 flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><div class="relative flex items-center justify-center"><div class="absolute -inset-1 bg-secondary-container/30 blur-md rounded-full pointer-events-none"></div><img alt="TurboCraft Hot Wheels Flame Logo" class="h-8 w-auto object-contain relative z-10" src="assets/img/logo.png"/></div><div class="flex flex-col"><span class="font-title-lg text-title-lg tracking-wider text-on-surface uppercase">TURBO<span class="text-secondary-container">·</span>CRAFT</span><span class="font-label-numeric text-label-numeric text-outline uppercase tracking-widest">Maya Shankar // Final Year CSE Student</span></div></div><nav class="hidden xl:flex items-center gap-space-xs p-space-xs bg-surface-container rounded-lg" data-active-classes="bg-primary-container text-on-primary-container font-headline-sm"><a aria-current="page" class="px-space-md py-space-xs transition-colors uppercase bg-primary-container text-on-primary-container font-headline-sm" data-path="portfolio" href="#garage">Garage</a><a class="px-space-md py-space-xs text-on-surface-variant hover:text-on-surface transition-colors font-label-caps text-label-caps uppercase" data-path="collector-editions" href="#garage">Blister Pack</a><a class="px-space-md py-space-xs text-on-surface-variant hover:text-on-surface transition-colors font-label-caps text-label-caps uppercase" data-path="telemetry" href="#telemetry">Telemetry</a><a class="px-space-md py-space-xs text-on-surface-variant hover:text-on-surface transition-colors font-label-caps text-label-caps uppercase" data-path="track-record" href="#track-record">Track Record</a><a class="px-space-md py-space-xs text-on-surface-variant hover:text-on-surface transition-colors font-label-caps text-label-caps uppercase" data-path="pit-stop" href="#pit-stop">Pit Stop</a></nav><div class="flex items-center gap-space-md"><button class="hidden sm:inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-DEFAULT bg-surface-container-high hover:bg-surface-container-highest transition-all shadow-[0_0_16px_rgba(236,194,0,0.2)] text-tertiary font-label-caps text-label-caps uppercase" type="button"><span class="material-symbols-outlined text-[16px]">speed</span><span>Nitro Boost</span></button><a class="inline-flex items-center px-space-lg py-space-xs bg-gradient-to-r from-secondary-container to-primary-container hover:from-primary-container hover:to-secondary-container text-on-primary-container font-label-caps text-label-caps uppercase tracking-wider rounded-DEFAULT shadow-[0_12px_32px_-4px_rgba(230,0,18,0.45)] transform -skew-x-6 hover:translate-y-[-1px] transition-transform" data-path="pit-stop" href="#pit-stop"><span class="transform skew-x-6">Hire Pit Crew</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-[0_0_8px_rgba(255,180,170,0.4)]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full overflow-hidden">
+<!-- Top Speed Ribbon Decal -->
+<div class="w-full flex h-1.5 bg-surface-container-lowest">
+<div class="w-1/3 bg-secondary-container"></div>
+<div class="w-1/3 bg-tertiary"></div>
+<div class="w-1/3 bg-primary-container"></div>
+</div>
+<!-- SECTION 1: HERO (Ignition & Launch Ramp) -->
+<section class="relative w-full px-gutter-sm md:px-gutter lg:px-gutter-lg pt-space-xl pb-space-2xl bg-surface">
+<div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-secondary-container/15 blur-[120px] pointer-events-none rounded-full"></div>
+<div class="absolute top-1/3 right-10 w-[400px] h-[250px] bg-primary-container/20 blur-[100px] pointer-events-none rounded-full"></div>
+<div class="relative z-10 max-w-7xl mx-auto flex flex-col items-center">
+<div class="flex flex-wrap items-center justify-center gap-space-sm mb-space-md">
+<span class="px-space-sm py-space-xs bg-primary-container text-on-primary-container font-label-caps text-label-caps uppercase rounded-DEFAULT shadow-sm -skew-x-6 inline-block">
+<span class="skew-x-6 inline-block">FIRST EDITION // FINAL YEAR CSE</span>
+</span>
+<span class="px-space-sm py-space-xs bg-tertiary text-on-tertiary font-label-caps text-label-caps uppercase rounded-DEFAULT shadow-sm -skew-x-6 inline-block font-semibold">
+<span class="skew-x-6 inline-block">SEEKING INTERNSHIP</span>
+</span>
+<div class="flex items-center gap-space-xs px-space-sm py-space-xs bg-surface-container-high rounded-DEFAULT text-tertiary">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-ping"></span>
+<span class="font-label-numeric text-label-numeric uppercase tracking-wider text-on-surface">SIH NATIONALS &amp; HACKATHON TEAM</span>
+</div>
+</div>
+<h1 class="text-center font-display-hero text-headline-lg md:text-display-hero tracking-normal uppercase text-on-surface mb-space-xs">
+        MAYA SHANKAR <span class="text-transparent bg-clip-text bg-gradient-to-r from-secondary-container via-tertiary to-primary-container">ENGINEERED</span>
+</h1>
+<p class="text-center font-headline-md text-headline-sm md:text-headline-md uppercase text-secondary-container tracking-wider -mt-space-xs mb-space-md">
+        FULL THROTTLE COMPUTER SCIENCE
+      </p>
+<p class="max-w-2xl text-center font-body-lg text-body-md md:text-body-lg text-on-surface-variant mb-space-xl">
+        Motivated final-year CSE undergraduate building practical projects — from computer-vision safety systems to AI-powered tools — and looking for an internship to put that horsepower to work on real-world code.
+      </p>
+<div class="flex flex-wrap items-center justify-center gap-space-md mb-space-2xl">
+<a class="inline-flex items-center gap-space-sm px-space-xl py-space-md bg-gradient-to-r from-secondary-container via-primary-container to-secondary-container text-on-primary-container font-label-caps text-headline-sm uppercase tracking-wider rounded-DEFAULT shadow-[0_16px_36px_-6px_rgba(255,87,8,0.5)] transform -skew-x-6 hover:scale-105 transition-all" href="#garage">
+<span class="skew-x-6 flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px]">local_fire_department</span>
+<span>EXPLORE THE GARAGE (0-100 MPH)</span>
+</span>
+</a>
+<a class="inline-flex items-center gap-space-sm px-space-xl py-space-md bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-caps text-headline-sm uppercase tracking-wider rounded-DEFAULT shadow-md transform -skew-x-6 hover:scale-105 transition-all" href="#telemetry">
+<span class="skew-x-6 flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-[20px]">tune</span>
+<span>INSPECT TELEMETRY</span>
+</span>
+</a>
+</div>
+<div class="relative w-full max-w-5xl rounded-xl p-space-xs bg-gradient-to-b from-secondary-container/40 via-surface-container-high to-surface-container-lowest shadow-[0_24px_50px_-12px_rgba(0,0,0,0.9)]">
+<div class="flex justify-center items-center pt-space-sm pb-space-xs">
+<div class="w-20 h-4 bg-surface-container-lowest rounded-full flex items-center justify-center shadow-inner">
+<div class="w-10 h-1.5 bg-surface-container-high rounded-full"></div>
+</div>
+</div>
+<div class="px-space-md py-space-xs flex items-center justify-between bg-surface-container-lowest/80 rounded-DEFAULT mx-space-xs mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-secondary-container tracking-wider uppercase">LANE DETECTION //</span>
+<span class="font-label-numeric text-label-numeric text-tertiary">COMPUTER VISION SAFETY PROJECT</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="px-space-xs py-0.5 bg-surface-container-highest text-on-surface-variant font-label-numeric text-label-numeric rounded-DEFAULT">FLAGSHIP PROJECT</span>
+<span class="px-space-xs py-0.5 bg-secondary-container text-on-secondary-container font-label-numeric text-label-numeric rounded-DEFAULT font-bold">REAL RIDERS ®</span>
+</div>
+</div>
+<div class="relative overflow-hidden rounded-lg bg-surface-container-lowest shadow-2xl group">
+<img alt="Die-cast twin engine hot rod on looping orange race track" class="w-full h-auto max-h-[540px] object-cover object-center transform group-hover:scale-[1.02] transition-transform duration-700" src="assets/img/hero.jpg"/>
+<div class="absolute inset-0 pointer-events-none bg-gradient-to-tr from-transparent via-white/5 to-white/10 opacity-70"></div>
+<div class="absolute top-0 left-0 right-0 h-12 bg-gradient-to-b from-white/15 to-transparent pointer-events-none"></div>
+<div class="absolute bottom-space-md left-space-md bg-surface-container-lowest/90 backdrop-blur-md p-space-md rounded-lg shadow-xl max-w-xs">
+<div class="flex items-center justify-between gap-space-md mb-space-xs">
+<span class="font-label-caps text-label-caps text-on-surface uppercase">LANE DEPARTURE WARNING</span>
+<span class="px-space-xs bg-primary-container text-on-primary-container font-label-numeric text-label-numeric rounded-DEFAULT">CV PIPELINE</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden mb-space-xs">
+<div class="bg-gradient-to-r from-tertiary via-secondary-container to-primary-container h-full w-[94%]"></div>
+</div>
+<div class="flex justify-between font-label-numeric text-label-numeric text-outline">
+<span>EDGE DETECTION: ON</span>
+<span>ROAD SAFETY: PRIORITY</span>
+</div>
+</div>
+<div class="absolute top-space-md right-space-md bg-surface-container-lowest/90 backdrop-blur-md px-space-md py-space-xs rounded-lg shadow-xl flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-[18px]">verified</span>
+<span class="font-label-caps text-label-caps text-on-surface uppercase">ACADEMIC PROJECT GRADE A</span>
+</div>
+</div>
+</div>
+<div class="w-full max-w-5xl grid grid-cols-2 md:grid-cols-4 gap-space-sm mt-space-lg">
+<div class="p-space-md bg-surface-container rounded-lg shadow-md flex flex-col justify-between">
+<div class="flex items-center justify-between text-outline mb-space-xs">
+<span class="font-label-numeric text-label-numeric uppercase">10TH BOARD</span>
+<span class="material-symbols-outlined text-[18px] text-secondary-container">speed</span>
+</div>
+<div>
+<div class="font-headline-md text-headline-md text-on-surface">82%</div>
+<div class="font-label-numeric text-label-numeric text-on-surface-variant">CBSE, 2021</div>
+</div>
+</div>
+<div class="p-space-md bg-surface-container rounded-lg shadow-md flex flex-col justify-between">
+<div class="flex items-center justify-between text-outline mb-space-xs">
+<span class="font-label-numeric text-label-numeric uppercase">12TH BOARD</span>
+<span class="material-symbols-outlined text-[18px] text-tertiary">all_inclusive</span>
+</div>
+<div>
+<div class="font-headline-md text-headline-md text-on-surface">62%</div>
+<div class="font-label-numeric text-label-numeric text-on-surface-variant">CBSE, 2023</div>
+</div>
+</div>
+<div class="p-space-md bg-surface-container rounded-lg shadow-md flex flex-col justify-between">
+<div class="flex items-center justify-between text-outline mb-space-xs">
+<span class="font-label-numeric text-label-numeric uppercase">PROJECTS BUILT</span>
+<span class="material-symbols-outlined text-[18px] text-primary">emoji_events</span>
+</div>
+<div>
+<div class="font-headline-md text-headline-md text-on-surface">5 SHIPPED</div>
+<div class="font-label-numeric text-label-numeric text-on-surface-variant">Academic &amp; Personal Builds</div>
+</div>
+</div>
+<div class="p-space-md bg-surface-container rounded-lg shadow-md flex flex-col justify-between">
+<div class="flex items-center justify-between text-outline mb-space-xs">
+<span class="font-label-numeric text-label-numeric uppercase">TEAM EVENTS</span>
+<span class="material-symbols-outlined text-[18px] text-secondary">verified</span>
+</div>
+<div>
+<div class="font-headline-md text-headline-md text-on-surface">SIH + HACKATHONS</div>
+<div class="font-label-numeric text-label-numeric text-on-surface-variant">Team Coordination Roles</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div class="w-full flex flex-col gap-[2px] bg-surface-container-lowest py-space-sm px-gutter-sm md:px-gutter lg:px-gutter-lg">
+<div class="w-full h-[2px] bg-secondary-container"></div>
+<div class="w-full h-[2px] bg-tertiary"></div>
+<div class="w-full h-[2px] bg-primary-container"></div>
+</div>
+<!-- SECTION 2: PROJECT SHOWCASE (The Collector Garage - Blister Pack Editions) -->
+<section class="relative w-full px-gutter-sm md:px-gutter lg:px-gutter-lg py-space-2xl bg-surface-container-lowest" id="garage">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row items-start md:items-end justify-between gap-space-md mb-space-xl">
+<div>
+<div class="flex items-center gap-space-xs mb-space-xs">
+<span class="material-symbols-outlined text-secondary-container text-[24px]">local_fire_department</span>
+<span class="font-label-caps text-label-caps text-secondary-container uppercase tracking-wider">TRACK ARCHIVE // PROJECT SERIES</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg uppercase text-on-surface">THE GARAGE: FIRST EDITIONS</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Every project packaged in mint-condition collector blister cards with verified die-cast technical telemetry.</p>
+</div>
+<div class="flex flex-wrap items-center gap-space-xs bg-surface-container p-space-xs rounded-lg" id="filter-container">
+<button class="filter-btn active px-space-md py-space-xs bg-primary-container text-on-primary-container font-label-caps text-label-caps uppercase rounded-DEFAULT shadow-sm" type="button">ALL SERIES</button>
+<button class="filter-btn px-space-md py-space-xs text-on-surface-variant hover:text-on-surface font-label-caps text-label-caps uppercase rounded-DEFAULT transition-colors" type="button">COMPUTER VISION</button>
+<button class="filter-btn px-space-md py-space-xs text-on-surface-variant hover:text-on-surface font-label-caps text-label-caps uppercase rounded-DEFAULT transition-colors" type="button">AI &amp; NLP</button>
+<button class="filter-btn px-space-md py-space-xs text-on-surface-variant hover:text-on-surface font-label-caps text-label-caps uppercase rounded-DEFAULT transition-colors" type="button">WEB APPS</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<!-- CARD 1: Lane Detection and Lane Departure Warning System -->
+<div class="group relative rounded-xl bg-surface-container p-space-sm shadow-xl hover:shadow-[0_16px_40px_-8px_rgba(255,87,8,0.4)] transition-all duration-300 flex flex-col justify-between">
+<div class="bg-gradient-to-r from-surface-container-high via-surface-container-highest to-surface-container-high p-space-md rounded-t-lg mb-space-xs flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-3 bg-surface-container-lowest rounded-full flex items-center justify-center">
+<div class="w-5 h-1 bg-surface-container-highest rounded-full"></div>
+</div>
+<span class="font-headline-sm text-headline-sm uppercase text-tertiary">SERIES #01</span>
+</div>
+<span class="px-space-sm py-space-xs bg-primary-container text-on-primary-container font-label-caps text-label-caps uppercase rounded-DEFAULT -skew-x-6">COMPUTER VISION</span>
+</div>
+<div class="relative rounded-lg overflow-hidden bg-surface-container-lowest aspect-video flex items-center justify-center group-hover:ring-1 group-hover:ring-secondary-container transition-all">
+<img alt="Lane detection computer vision project" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" src="assets/img/card1.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent opacity-80"></div>
+<div class="absolute top-space-sm left-space-sm px-space-sm py-space-xs bg-surface-container-lowest/80 backdrop-blur-md rounded-DEFAULT flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span>
+<span class="font-label-numeric text-label-numeric text-on-surface uppercase">IMAGE PROCESSING</span>
+</div>
+<div class="absolute bottom-space-sm right-space-sm">
+<span class="px-space-sm py-space-xs bg-secondary-container text-on-secondary-container font-label-caps text-label-caps uppercase rounded-DEFAULT shadow-md">ACADEMIC PROJECT</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-md text-headline-md uppercase text-on-surface group-hover:text-secondary-container transition-colors">LANE DETECTION &amp; WARNING SYSTEM</h3>
+<span class="font-label-numeric text-label-numeric text-tertiary">SAFETY: 10 / 10</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Designing and implementing a lane detection and lane departure warning system using computer vision. Uses image processing to detect edges, identify lane lines, and determine the vehicle's position to help drivers maintain lane discipline.</p>
+<div class="flex flex-wrap gap-space-xs pt-space-xs">
+<span class="px-space-xs py-0.5 bg-surface-container-highest font-label-numeric text-label-numeric text-on-surface-variant rounded-DEFAULT">Python</span>
+<span class="px-space-xs py-0.5 bg-surface-container-highest font-label-numeric text-label-numeric text-on-surface-variant rounded-DEFAULT">OpenCV</span>
+<span class="px-space-xs py-0.5 bg-surface-container-highest font-label-numeric text-label-numeric text-on-surface-variant rounded-DEFAULT">Edge Detection</span>
+<span class="px-space-xs py-0.5 bg-surface-container-highest font-label-numeric text-label-numeric text-on-surface-variant rounded-DEFAULT">Image Processing</span>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<span class="inline-flex items-center gap-space-xs text-secondary-container font-label-caps text-label-caps uppercase">
+<span>ROAD SAFETY PROJECT</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</span>
+<span class="font-label-numeric text-label-numeric text-outline">CHASSIS REF: 001-LDW</span>
+</div>
+</div>
+</div>
+<!-- CARD 2: Spam Detection -->
+<div class="group relative rounded-xl bg-surface-container p-space-sm shadow-xl hover:shadow-[0_16px_40px_-8px_rgba(236,194,0,0.4)] transition-all duration-300 flex flex-col justify-between">
+<div class="bg-gradient-to-r from-surface-container-high via-surface-container-highest to-surface-container-high p-space-md rounded-t-lg mb-space-xs flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-3 bg-surface-container-lowest rounded-full flex items-center justify-center">
+<div class="w-5 h-1 bg-surface-container-highest rounded-full"></div>
+</div>
+<span class="font-headline-sm text-headline-sm uppercase text-tertiary">SERIES #02</span>
+</div>
+<span class="px-space-sm py-space-xs bg-tertiary text-on-tertiary font-label-caps text-label-caps uppercase rounded-DEFAULT -skew-x-6">AI &amp; NLP</span>
+</div>
+<div class="relative rounded-lg overflow-hidden bg-surface-container-lowest aspect-video flex items-center justify-center group-hover:ring-1 group-hover:ring-tertiary transition-all">
+<img alt="Spam detection NLP project" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" src="assets/img/card2.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent opacity-80"></div>
+<div class="absolute top-space-sm left-space-sm px-space-sm py-space-xs bg-surface-container-lowest/80 backdrop-blur-md rounded-DEFAULT flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-ping"></span>
+<span class="font-label-numeric text-label-numeric text-on-surface uppercase">TEXT CLASSIFICATION</span>
+</div>
+<div class="absolute bottom-space-sm right-space-sm">
+<span class="px-space-sm py-space-xs bg-tertiary text-on-tertiary font-label-caps text-label-caps uppercase rounded-DEFAULT shadow-md">SECURITY TOOL</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-md text-headline-md uppercase text-on-surface group-hover:text-tertiary transition-colors">SPAM DETECTION SYSTEM</h3>
+<span class="font-label-numeric text-label-numeric text-secondary">ACCURACY: 9 / 10</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">An efficient spam detection system that automates classification of spam and non-spam messages, analyzing textual content for deceptive indicators — suspicious URLs, excessive capitalization, and specific keywords.</p>
+<div class="flex flex-wrap gap-space-xs pt-space-xs">
+<span class="px-space-xs py-0.5 bg-surface-container-highest font-label-numeric text-label-numeric text-on-surface-variant rounded-DEFAULT">Python</span>
+<span class="px-space-xs py-0.5 bg-surface-container-highest font-label-numeric text-label-numeric text-on-surface-variant rounded-DEFAULT">Text Classification</span>
+<span class="px-space-xs py-0.5 bg-surface-container-highest font-label-numeric text-label-numeric text-on-surface-variant rounded-DEFAULT">Keyword Analysis</span>
+<span class="px-space-xs py-0.5 bg-surface-container-highest font-label-numeric text-label-numeric text-on-surface-variant rounded-DEFAULT">Privacy Protection</span>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<span class="inline-flex items-center gap-space-xs text-tertiary font-label-caps text-label-caps uppercase">
+<span>DIGITAL SAFETY PROJECT</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</span>
+<span class="font-label-numeric text-label-numeric text-outline">CHASSIS REF: 002-SPD</span>
+</div>
+</div>
+</div>
+<!-- CARD 3: AI Chatbot Clone -->
+<div class="group relative rounded-xl bg-surface-container p-space-sm shadow-xl hover:shadow-[0_16px_40px_-8px_rgba(230,0,18,0.4)] transition-all duration-300 flex flex-col justify-between">
+<div class="bg-gradient-to-r from-surface-container-high via-surface-container-highest to-surface-container-high p-space-md rounded-t-lg mb-space-xs flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-3 bg-surface-container-lowest rounded-full flex items-center justify-center">
+<div class="w-5 h-1 bg-surface-container-highest rounded-full"></div>
+</div>
+<span class="font-headline-sm text-headline-sm uppercase text-tertiary">SERIES #03</span>
+</div>
+<span class="px-space-sm py-space-xs bg-secondary-container text-on-secondary-container font-label-caps text-label-caps uppercase rounded-DEFAULT -skew-x-6 font-bold">AI &amp; NLP</span>
+</div>
+<div class="relative rounded-lg overflow-hidden bg-surface-container-lowest aspect-video flex items-center justify-center group-hover:ring-1 group-hover:ring-primary-container transition-all">
+<img alt="AI chatbot clone project" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" src="assets/img/card3.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent opacity-80"></div>
+<div class="absolute top-space-sm left-space-sm px-space-sm py-space-xs bg-surface-container-lowest/80 backdrop-blur-md rounded-DEFAULT flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-label-numeric text-label-numeric text-on-surface uppercase">LLM POWERED</span>
+</div>
+<div class="absolute bottom-space-sm right-space-sm">
+<span class="px-space-sm py-space-xs bg-primary-container text-on-primary-container font-label-caps text-label-caps uppercase rounded-DEFAULT shadow-md">CONVERSATIONAL AI</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-md text-headline-md uppercase text-on-surface group-hover:text-primary-container transition-colors">AI CHATBOT CLONE</h3>
+<span class="font-label-numeric text-label-numeric text-tertiary">CONTEXT: 9 / 10</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">An intelligent conversational application using large language models to understand user queries, generate human-like responses, maintain conversation history, and provide real-time, context-aware assistance.</p>
+<div class="flex flex-wrap gap-space-xs pt-space-xs">
+<span class="px-space-xs py-0.5 bg-surface-container-highest font-label-numeric text-label-numeric text-on-surface-variant rounded-DEFAULT">LLMs</span>
+<span class="px-space-xs py-0.5 bg-surface-container-highest font-label-numeric text-label-numeric text-on-surface-variant rounded-DEFAULT">Prompt Engineering</span>
+<span class="px-space-xs py-0.5 bg-surface-container-highest font-label-numeric text-label-numeric text-on-surface-variant rounded-DEFAULT">Conversation History</span>
+<span class="px-space-xs py-0.5 bg-surface-container-highest font-label-numeric text-label-numeric text-on-surface-variant rounded-DEFAULT">RAG</span>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<span class="inline-flex items-center gap-space-xs text-primary-container font-label-caps text-label-caps uppercase">
+<span>CONVERSATIONAL AI</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</span>
+<span class="font-label-numeric text-label-numeric text-outline">CHASSIS REF: 003-BOT</span>
+</div>
+</div>
+</div>
+<!-- CARD 4: MedAgent -->
+<div class="group relative rounded-xl bg-surface-container p-space-sm shadow-xl hover:shadow-[0_16px_40px_-8px_rgba(255,87,8,0.4)] transition-all duration-300 flex flex-col justify-between">
+<div class="bg-gradient-to-r from-surface-container-high via-surface-container-highest to-surface-container-high p-space-md rounded-t-lg mb-space-xs flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-3 bg-surface-container-lowest rounded-full flex items-center justify-center">
+<div class="w-5 h-1 bg-surface-container-highest rounded-full"></div>
+</div>
+<span class="font-headline-sm text-headline-sm uppercase text-tertiary">SERIES #04</span>
+</div>
+<span class="px-space-sm py-space-xs bg-surface-container-highest text-on-surface font-label-caps text-label-caps uppercase rounded-DEFAULT -skew-x-6">WEB APP</span>
+</div>
+<div class="relative rounded-lg overflow-hidden bg-surface-container-lowest aspect-video flex items-center justify-center group-hover:ring-1 group-hover:ring-secondary-container transition-all">
+<img alt="MedAgent healthcare booking web app" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" src="assets/img/card4.jpg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent opacity-80"></div>
+<div class="absolute top-space-sm left-space-sm px-space-sm py-space-xs bg-surface-container-lowest/80 backdrop-blur-md rounded-DEFAULT flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+<span class="font-label-numeric text-label-numeric text-on-surface uppercase">HEALTHCARE WEB APP</span>
+</div>
+<div class="absolute bottom-space-sm right-space-sm">
+<span class="px-space-sm py-space-xs bg-surface-container-highest text-on-surface font-label-caps text-label-caps uppercase rounded-DEFAULT shadow-md">BOOKING PLATFORM</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-md text-headline-md uppercase text-on-surface group-hover:text-secondary-container transition-colors">MEDAGENT</h3>
+<span class="font-label-numeric text-label-numeric text-tertiary">UX: 9 / 10</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">A healthcare-based web application that simplifies booking medical consultations and doctor appointments — browse doctors, view specializations, and schedule online consultations without long waits or physical visits.</p>
+<div class="flex flex-wrap gap-space-xs pt-space-xs">
+<span class="px-space-xs py-0.5 bg-surface-container-highest font-label-numeric text-label-numeric text-on-surface-variant rounded-DEFAULT">HTML</span>
+<span class="px-space-xs py-0.5 bg-surface-container-highest font-label-numeric text-label-numeric text-on-surface-variant rounded-DEFAULT">CSS</span>
+<span class="px-space-xs py-0.5 bg-surface-container-highest font-label-numeric text-label-numeric text-on-surface-variant rounded-DEFAULT">Appointment Scheduling</span>
+<span class="px-space-xs py-0.5 bg-surface-container-highest font-label-numeric text-label-numeric text-on-surface-variant rounded-DEFAULT">Remote Access</span>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<span class="inline-flex items-center gap-space-xs text-secondary-container font-label-caps text-label-caps uppercase">
+<span>HEALTHCARE ACCESS</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</span>
+<span class="font-label-numeric text-label-numeric text-outline">CHASSIS REF: 004-MED</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Bonus 5th build noted, keeping the 2-col garage grid intact -->
+<div class="mt-space-lg p-space-md bg-surface-container rounded-lg shadow-md flex flex-col md:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-tertiary text-[24px]">chat</span>
+<div>
+<div class="font-headline-sm text-headline-sm uppercase text-on-surface">BONUS BUILD // PROMPT TESTER APP</div>
+<div class="font-body-sm text-body-sm text-on-surface-variant">A smart web-based app to create, test, and refine AI prompts — experiment with variations and instantly evaluate outputs.</div>
+</div>
+</div>
+<span class="px-space-sm py-space-xs bg-surface-container-highest text-on-surface font-label-numeric text-label-numeric uppercase rounded-DEFAULT">CHASSIS REF: 005-PTA</span>
+</div>
+</div>
+</section>
+<!-- SECTION 3: SKILLS & ENGINE BAY (Under The Hood - Telemetry & Tuning) -->
+<section class="relative w-full px-gutter-sm md:px-gutter lg:px-gutter-lg py-space-2xl bg-surface" id="telemetry">
+<div class="absolute bottom-0 left-1/4 w-[500px] h-[300px] bg-secondary-container/10 blur-[140px] pointer-events-none rounded-full"></div>
+<div class="max-w-7xl mx-auto relative z-10">
+<div class="mb-space-xl">
+<div class="flex items-center gap-space-xs mb-space-xs">
+<span class="material-symbols-outlined text-tertiary text-[24px]">tune</span>
+<span class="font-label-caps text-label-caps text-tertiary uppercase tracking-wider">DYNO DIAGNOSTIC BENCH</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg uppercase text-on-surface">UNDER THE HOOD: TUNING SPECS</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">Technical stack currently being built up — a quick learner's toolkit, tuned for problem-solving over polish.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Module 1: Combustion Engine -->
+<div class="p-space-lg bg-surface-container-low rounded-lg shadow-lg flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute top-0 right-0 w-24 h-24 bg-primary-container/10 rounded-full blur-xl pointer-events-none"></div>
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-label-caps text-label-caps text-secondary-container uppercase">CORE LANGUAGES</span>
+<span class="material-symbols-outlined text-primary-container text-[28px]">speed</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface mb-space-xs">COMBUSTION ENGINE</h3>
+<p class="font-label-numeric text-label-numeric text-outline uppercase mb-space-md">Programming Fundamentals</p>
+<ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant mb-space-lg">
+<li class="flex items-center justify-between"><span>C</span><span class="text-tertiary font-label-numeric">55%</span></li>
+<li class="flex items-center justify-between"><span>Python</span><span class="text-tertiary font-label-numeric">55%</span></li>
+<li class="flex items-center justify-between"><span>Problem-Solving Logic</span><span class="text-tertiary font-label-numeric">70%</span></li>
+<li class="flex items-center justify-between"><span>Data Structures &amp; Algorithms</span><span class="text-tertiary font-label-numeric">35%</span></li>
+</ul>
+</div>
+<div>
+<div class="flex items-center justify-between font-label-numeric text-label-numeric text-outline mb-space-xs">
+<span>CURRENTLY LEARNING: DSA</span>
+<span class="text-primary-container font-bold">IN PROGRESS</span>
+</div>
+<div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-secondary-container to-primary-container w-[35%]"></div>
+</div>
+</div>
+</div>
+<!-- Module 2: Twin Superchargers -->
+<div class="p-space-lg bg-surface-container-low rounded-lg shadow-lg flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute top-0 right-0 w-24 h-24 bg-tertiary/10 rounded-full blur-xl pointer-events-none"></div>
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-label-caps text-label-caps text-tertiary uppercase">FRONT-END BASICS</span>
+<span class="material-symbols-outlined text-tertiary text-[28px]">air</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface mb-space-xs">TWIN CHARGERS</h3>
+<p class="font-label-numeric text-label-numeric text-outline uppercase mb-space-md">Web Development</p>
+<ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant mb-space-lg">
+<li class="flex items-center justify-between"><span>HTML</span><span class="text-tertiary font-label-numeric">65%</span></li>
+<li class="flex items-center justify-between"><span>CSS</span><span class="text-tertiary font-label-numeric">60%</span></li>
+<li class="flex items-center justify-between"><span>RAG Concepts</span><span class="text-tertiary font-label-numeric">50%</span></li>
+</ul>
+</div>
+<div>
+<div class="flex items-center justify-between font-label-numeric text-label-numeric text-outline mb-space-xs">
+<span>WEB DEV LEVEL</span>
+<span class="text-tertiary font-bold">BEGINNER</span>
+</div>
+<div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-secondary-container via-tertiary to-tertiary w-[60%]"></div>
+</div>
+</div>
+</div>
+<!-- Module 3: Chassis & Aerodynamics -->
+<div class="p-space-lg bg-surface-container-low rounded-lg shadow-lg flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute top-0 right-0 w-24 h-24 bg-secondary/10 rounded-full blur-xl pointer-events-none"></div>
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-label-caps text-label-caps text-secondary uppercase">SOFT SKILLS</span>
+<span class="material-symbols-outlined text-secondary text-[28px]">flare</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface mb-space-xs">CHASSIS &amp; AERO</h3>
+<p class="font-label-numeric text-label-numeric text-outline uppercase mb-space-md">Strengths &amp; Teamwork</p>
+<ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant mb-space-lg">
+<li class="flex items-center justify-between"><span>Quick Learner / Adaptability</span><span class="text-tertiary font-label-numeric">90%</span></li>
+<li class="flex items-center justify-between"><span>Problem-Solving Mindset</span><span class="text-tertiary font-label-numeric">85%</span></li>
+<li class="flex items-center justify-between"><span>Communication &amp; Teamwork</span><span class="text-tertiary font-label-numeric">85%</span></li>
+<li class="flex items-center justify-between"><span>Leadership</span><span class="text-tertiary font-label-numeric">75%</span></li>
+</ul>
+</div>
+<div>
+<div class="flex items-center justify-between font-label-numeric text-label-numeric text-outline mb-space-xs">
+<span>TEAMWORK RATING</span>
+<span class="text-secondary font-bold">STRONG</span>
+</div>
+<div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-tertiary to-secondary w-[85%]"></div>
+</div>
+</div>
+</div>
+<!-- Module 4: Pit Crew Toolkit -->
+<div class="p-space-lg bg-surface-container-low rounded-lg shadow-lg flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute top-0 right-0 w-24 h-24 bg-outline/10 rounded-full blur-xl pointer-events-none"></div>
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-label-caps text-label-caps text-outline uppercase">PIT WORKSHOP</span>
+<span class="material-symbols-outlined text-outline text-[28px]">handyman</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface mb-space-xs">PIT CREW TOOLS</h3>
+<p class="font-label-numeric text-label-numeric text-outline uppercase mb-space-md">Tools &amp; Languages</p>
+<ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant mb-space-lg">
+<li class="flex items-center justify-between"><span>VS Code</span><span class="text-tertiary font-label-numeric">75%</span></li>
+<li class="flex items-center justify-between"><span>Git (Basics)</span><span class="text-tertiary font-label-numeric">45%</span></li>
+<li class="flex items-center justify-between"><span>English / Hindi</span><span class="text-tertiary font-label-numeric">100%</span></li>
+<li class="flex items-center justify-between"><span>German (Learning)</span><span class="text-tertiary font-label-numeric">20%</span></li>
+</ul>
+</div>
+<div>
+<div class="flex items-center justify-between font-label-numeric text-label-numeric text-outline mb-space-xs">
+<span>HOBBIES</span>
+<span class="text-outline font-bold">BASKETBALL / VOLLEYBALL</span>
+</div>
+<div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-surface-bright to-tertiary w-[60%]"></div>
+</div>
+</div>
+</div>
+</div>
+<!-- Dyno Live Performance Ticker Strip -->
+<div class="mt-space-lg p-space-md bg-surface-container-lowest rounded-lg flex flex-col md:flex-row items-center justify-between gap-space-md shadow-inner">
+<div class="flex items-center gap-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="w-3 h-3 rounded-full bg-secondary-container animate-pulse"></span>
+<span class="font-label-caps text-label-caps text-on-surface uppercase">DYNO ACTIVE // STUDENT MODE</span>
+</div>
+<span class="hidden md:inline text-outline">|</span>
+<span class="font-label-numeric text-label-numeric text-on-surface-variant">TEAM EVENTS: SIH NATIONALS + HACKATHONS</span>
+<span class="hidden md:inline text-outline">|</span>
+<span class="font-label-numeric text-label-numeric text-tertiary">STATUS: OPEN TO INTERNSHIPS</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<span class="font-label-numeric text-label-numeric text-outline uppercase">CURRENT FOCUS: DSA V1.0</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Checkered Flag Transition Banner -->
+<div class="w-full h-8 bg-surface-container-lowest relative overflow-hidden flex">
+<div class="w-full h-full bg-[repeating-conic-gradient(#282a2e_0%_25%,#111317_0%_50%)] bg-[length:24px_24px] opacity-40"></div>
+</div>
+<!-- SECTION 4: CAREER MILESTONES (Track Record & Lap Times) -->
+<section class="relative w-full px-gutter-sm md:px-gutter lg:px-gutter-lg py-space-2xl bg-surface-container-lowest" id="track-record">
+<div class="max-w-7xl mx-auto">
+<div class="mb-space-2xl">
+<div class="flex items-center gap-space-xs mb-space-xs">
+<span class="material-symbols-outlined text-secondary-container text-[24px]">flag</span>
+<span class="font-label-caps text-label-caps text-secondary-container uppercase tracking-wider">CIRCUIT SPLIT TIMES</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg uppercase text-on-surface">TRACK RECORD &amp; LAP MILESTONES</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">From board exams to team hackathons — the laps that got this racer to the starting grid.</p>
+</div>
+<!-- Visual Looping Track Circuit Timeline -->
+<div class="relative">
+<div class="hidden lg:block absolute left-1/2 top-4 bottom-4 w-3 -translate-x-1/2 bg-secondary-container rounded-full overflow-hidden pointer-events-none">
+<div class="absolute inset-0 bg-[repeating-linear-gradient(45deg,transparent,transparent_8px,#ecc200_8px,#ecc200_16px)] opacity-50"></div>
+<div class="w-full h-full border-x-2 border-surface-container-lowest"></div>
+</div>
+<div class="flex flex-col gap-space-xl relative z-10">
+<!-- Checkpoint 1 -->
+<div class="flex flex-col lg:flex-row items-center justify-between gap-space-lg">
+<div class="w-full lg:w-5/12 bg-surface-container p-space-lg rounded-xl shadow-lg hover:shadow-2xl transition-shadow">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="px-space-xs py-0.5 bg-primary-container text-on-primary-container font-label-numeric text-label-numeric uppercase rounded-DEFAULT">LAP 04 // CURRENT</span>
+<span class="font-label-numeric text-label-numeric text-tertiary">2023 – PRESENT</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface">FINAL YEAR CSE UNDERGRADUATE</h3>
+<p class="font-label-caps text-label-caps text-secondary-container uppercase mb-space-xs">Computer Science Engineering</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Actively building practical skills through academic and personal projects, seeking an internship to apply foundational programming knowledge and contribute to real-world projects.</p>
+</div>
+<div class="w-12 h-12 rounded-full bg-secondary-container text-on-secondary-container flex items-center justify-center font-headline-sm shadow-[0_0_20px_rgba(255,87,8,0.8)] shrink-0 z-20">
+              01
+            </div>
+<div class="w-full lg:w-5/12 hidden lg:flex items-center text-outline font-label-numeric text-label-numeric uppercase">
+<span class="p-space-sm bg-surface-container-low rounded-DEFAULT">SEEKING INTERNSHIP // OPEN TO OPPORTUNITIES</span>
+</div>
+</div>
+<!-- Checkpoint 2 -->
+<div class="flex flex-col lg:flex-row-reverse items-center justify-between gap-space-lg">
+<div class="w-full lg:w-5/12 bg-surface-container p-space-lg rounded-xl shadow-lg hover:shadow-2xl transition-shadow">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="px-space-xs py-0.5 bg-surface-container-highest text-on-surface font-label-numeric text-label-numeric uppercase rounded-DEFAULT">LAP 03</span>
+<span class="font-label-numeric text-label-numeric text-tertiary">ONGOING</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface">SIH NATIONALS &amp; HACKATHON TEAMS</h3>
+<p class="font-label-caps text-label-caps text-secondary-container uppercase mb-space-xs">Team Coordination</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Team coordination in the Smart India Hackathon (SIH) nationals event, plus coordination across multiple hackathon teams and project-based team bonding during classes.</p>
+</div>
+<div class="w-12 h-12 rounded-full bg-tertiary text-on-tertiary flex items-center justify-center font-headline-sm shadow-[0_0_20px_rgba(236,194,0,0.8)] shrink-0 z-20">
+              02
+            </div>
+<div class="w-full lg:w-5/12 hidden lg:flex justify-end items-center text-outline font-label-numeric text-label-numeric uppercase">
+<span class="p-space-sm bg-surface-container-low rounded-DEFAULT">NATIONAL-LEVEL EVENT EXPERIENCE</span>
+</div>
+</div>
+<!-- Checkpoint 3 -->
+<div class="flex flex-col lg:flex-row items-center justify-between gap-space-lg">
+<div class="w-full lg:w-5/12 bg-surface-container p-space-lg rounded-xl shadow-lg hover:shadow-2xl transition-shadow">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="px-space-xs py-0.5 bg-surface-container-highest text-on-surface font-label-numeric text-label-numeric uppercase rounded-DEFAULT">LAP 02</span>
+<span class="font-label-numeric text-label-numeric text-tertiary">2023</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface">12TH BOARD — 62%</h3>
+<p class="font-label-caps text-label-caps text-secondary-container uppercase mb-space-xs">CBSE</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Completed senior secondary education, moving straight into a Computer Science Engineering undergraduate program.</p>
+</div>
+<div class="w-12 h-12 rounded-full bg-surface-container-highest text-on-surface flex items-center justify-center font-headline-sm shadow-md shrink-0 z-20">
+              03
+            </div>
+<div class="w-full lg:w-5/12 hidden lg:flex items-center text-outline font-label-numeric text-label-numeric uppercase">
+<span class="p-space-sm bg-surface-container-low rounded-DEFAULT">CBSE BOARD // CLASS XII</span>
+</div>
+</div>
+<!-- Checkpoint 4 -->
+<div class="flex flex-col lg:flex-row-reverse items-center justify-between gap-space-lg">
+<div class="w-full lg:w-5/12 bg-surface-container p-space-lg rounded-xl shadow-lg hover:shadow-2xl transition-shadow">
+<div class="flex items-center justify-between mb-space-xs">
+<span class="px-space-xs py-0.5 bg-surface-container-highest text-on-surface font-label-numeric text-label-numeric uppercase rounded-DEFAULT">LAP 01 // ROOKIE</span>
+<span class="font-label-numeric text-label-numeric text-tertiary">2021</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface">10TH BOARD — 82%</h3>
+<p class="font-label-caps text-label-caps text-secondary-container uppercase mb-space-xs">CBSE</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Grid qualifier — the starting line of the academic journey, laying the foundation for everything since.</p>
+</div>
+<div class="w-12 h-12 rounded-full bg-surface-container-high text-on-surface-variant flex items-center justify-center font-headline-sm shadow-md shrink-0 z-20">
+              04
+            </div>
+<div class="w-full lg:w-5/12 hidden lg:flex justify-end items-center text-outline font-label-numeric text-label-numeric uppercase">
+<span class="p-space-sm bg-surface-container-low rounded-DEFAULT">GRID QUALIFIER // CBSE CLASS X</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Checkered Flag Transition Banner -->
+<div class="w-full h-8 bg-surface-container-lowest relative overflow-hidden flex">
+<div class="w-full h-full bg-[repeating-conic-gradient(#282a2e_0%_25%,#111317_0%_50%)] bg-[length:24px_24px] opacity-40"></div>
+</div>
+<!-- SECTION 5: PIT STOP & CONTACT SECTION -->
+<section class="relative w-full px-gutter-sm md:px-gutter lg:px-gutter-lg py-space-2xl bg-surface" id="pit-stop">
+<div class="max-w-7xl mx-auto">
+<div class="text-center max-w-3xl mx-auto mb-space-2xl">
+<span class="px-space-md py-space-xs bg-secondary-container text-on-secondary-container font-label-caps text-label-caps uppercase rounded-DEFAULT -skew-x-6 inline-block mb-space-sm">
+<span class="skew-x-6 inline-block">RACE DIRECTORY DISPATCH</span>
+</span>
+<h2 class="font-headline-lg text-headline-lg uppercase text-on-surface mb-space-xs">READY TO HIRE THIS RACER?</h2>
+<p class="font-headline-sm text-headline-sm uppercase text-secondary-container mb-space-md">PULL INTO THE PIT LANE &amp; SEND A MESSAGE</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Available for internship opportunities in software development. Let's talk about your team's next project.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- Diagnostic Work Order Form -->
+<div class="lg:col-span-7 bg-surface-container p-space-xl rounded-xl shadow-2xl relative overflow-hidden">
+<div class="flex items-center justify-between mb-space-lg pb-space-xs bg-surface-container-low p-space-sm rounded-DEFAULT">
+<span class="font-label-caps text-label-caps text-tertiary uppercase flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[18px]">build</span>
+<span>MECHANIC WORK ORDER SHEET</span>
+</span>
+<span class="font-label-numeric text-label-numeric text-outline uppercase">STATUS: DOCK OPEN</span>
+</div>
+<form class="space-y-space-md" id="pit-crew-form" onsubmit="event.preventDefault(); alert('Message transmitted! Maya will get back to you soon.');">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-md">
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface uppercase mb-space-xs" for="driver-name">Your Name</label>
+<input class="w-full px-space-md py-space-sm bg-surface-container-lowest text-on-surface rounded-DEFAULT shadow-inner focus:outline-none focus:ring-2 focus:ring-secondary-container font-body-md" id="driver-name" placeholder="e.g. Jordan Lee" required="" type="text"/>
+</div>
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface uppercase mb-space-xs" for="team-email">Your Email</label>
+<input class="w-full px-space-md py-space-sm bg-surface-container-lowest text-on-surface rounded-DEFAULT shadow-inner focus:outline-none focus:ring-2 focus:ring-secondary-container font-body-md" id="team-email" placeholder="you@company.com" required="" type="email"/>
+</div>
+</div>
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface uppercase mb-space-xs" for="budget-tier">Opportunity Type</label>
+<select class="w-full px-space-md py-space-sm bg-surface-container-lowest text-on-surface rounded-DEFAULT shadow-inner focus:outline-none focus:ring-2 focus:ring-secondary-container font-body-md" id="budget-tier">
+<option value="internship">Internship</option>
+<option value="project">Project Collaboration</option>
+<option value="mentorship">Mentorship / Guidance</option>
+</select>
+</div>
+<div>
+<label class="block font-label-caps text-label-caps text-on-surface uppercase mb-space-xs" for="project-brief">Message</label>
+<textarea class="w-full px-space-md py-space-sm bg-surface-container-lowest text-on-surface rounded-DEFAULT shadow-inner focus:outline-none focus:ring-2 focus:ring-secondary-container font-body-md" id="project-brief" placeholder="Tell me about the role or project..." required="" rows="4"></textarea>
+</div>
+<button class="w-full py-space-md bg-gradient-to-r from-secondary-container via-primary-container to-secondary-container text-on-primary-container font-label-caps text-headline-sm uppercase tracking-wider rounded-DEFAULT shadow-[0_12px_28px_-4px_rgba(255,87,8,0.5)] transform -skew-x-6 hover:scale-[1.01] transition-all" type="submit">
+<span class="skew-x-6 inline-flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px]">sports_motorsports</span>
+<span>SEND DISPATCH</span>
+</span>
+</button>
+</form>
+</div>
+<!-- Direct Comms & Driver Dossier -->
+<div class="lg:col-span-5 flex flex-col gap-space-md">
+<!-- Driver Card -->
+<div class="bg-surface-container p-space-lg rounded-xl shadow-lg">
+<div class="flex items-center gap-space-md mb-space-md">
+<div class="w-16 h-16 rounded-full bg-secondary-container/20 flex items-center justify-center text-secondary-container border-2 border-secondary-container shrink-0">
+<span class="material-symbols-outlined text-[36px]">sports_score</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-headline-sm uppercase text-on-surface">MAYA SHANKAR</h4>
+<p class="font-label-numeric text-label-numeric text-tertiary uppercase">FINAL YEAR CSE STUDENT</p>
+<p class="font-body-sm text-body-sm text-outline">Bhattagaon, Jhansi, India</p>
+</div>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-md">Quick learner with a problem-solving mindset, looking to apply foundational programming knowledge on real-world projects.</p>
+<a class="inline-flex items-center justify-center gap-space-xs w-full py-space-sm bg-surface-container-high hover:bg-surface-container-highest text-tertiary font-label-caps text-label-caps uppercase rounded-DEFAULT transition-colors" href="Maya_Shankar_Resume-1.pdf" download="">
+<span class="material-symbols-outlined text-[18px]">badge</span>
+<span>DOWNLOAD RESUME (CV)</span>
+</a>
+</div>
+<!-- Fast Comms Channels -->
+<div class="bg-surface-container-low p-space-lg rounded-xl shadow-lg flex flex-col gap-space-sm">
+<span class="font-label-caps text-label-caps text-outline uppercase mb-space-xs">DIRECT RADIO FREQUENCIES</span>
+<a class="flex items-center justify-between p-space-sm bg-surface-container rounded-DEFAULT hover:bg-surface-container-high transition-colors group" href="mailto:mayashankarx@gmail.com">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary-container">mail</span>
+<span class="font-label-numeric text-label-numeric text-on-surface">mayashankarx@gmail.com</span>
+</div>
+<span class="font-label-numeric text-label-numeric text-outline group-hover:text-tertiary">&lt;EMAIL&gt;</span>
+</a>
+<a class="flex items-center justify-between p-space-sm bg-surface-container rounded-DEFAULT hover:bg-surface-container-high transition-colors group" href="tel:+917404551195">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-tertiary">call</span>
+<span class="font-label-numeric text-label-numeric text-on-surface">+91 74045 51195</span>
+</div>
+<span class="font-label-numeric text-label-numeric text-outline group-hover:text-tertiary">&lt;PHONE&gt;</span>
+</a>
+<div class="flex items-center justify-between p-space-sm bg-surface-container rounded-DEFAULT">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary">translate</span>
+<span class="font-label-numeric text-label-numeric text-on-surface">English, Hindi, German (Learning)</span>
+</div>
+<span class="font-label-numeric text-label-numeric text-outline">&lt;LANGUAGES&gt;</span>
+</div>
+<div class="flex items-center justify-between p-space-sm bg-surface-container rounded-DEFAULT">
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary-container">sports_basketball</span>
+<span class="font-label-numeric text-label-numeric text-on-surface">Basketball, Volleyball</span>
+</div>
+<span class="font-label-numeric text-label-numeric text-outline">&lt;HOBBIES&gt;</span>
+</div>
+</div>
+<!-- Current Pole Position Badge -->
+<div class="p-space-md bg-gradient-to-r from-surface-container to-surface-container-high rounded-xl flex items-center justify-between shadow-md">
+<div class="flex items-center gap-space-sm">
+<span class="w-3 h-3 rounded-full bg-tertiary animate-ping"></span>
+<div>
+<div class="font-label-caps text-label-caps text-on-surface uppercase">AVAILABILITY</div>
+<div class="font-label-numeric text-label-numeric text-outline">OPEN FOR INTERNSHIP ROLES</div>
+</div>
+</div>
+<span class="px-space-sm py-space-xs bg-tertiary text-on-tertiary font-label-numeric text-label-numeric uppercase rounded-DEFAULT font-bold">READY</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Interactive JavaScript for Category Filter Micro-Interactions -->
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const filterBtns = document.querySelectorAll('#filter-container .filter-btn');
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          filterBtns.forEach(b => {
+            b.classList.remove('bg-primary-container', 'text-on-primary-container', 'shadow-sm');
+            b.classList.add('text-on-surface-variant');
+          });
+          btn.classList.add('bg-primary-container', 'text-on-primary-container', 'shadow-sm');
+          btn.classList.remove('text-on-surface-variant');
+        });
+      });
+    });
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest text-on-surface"><div class="w-full h-3 bg-secondary-container relative overflow-hidden flex items-center"><div class="absolute inset-0 bg-[repeating-linear-gradient(45deg,transparent,transparent_10px,#cca800_10px,#cca800_20px)] opacity-40"></div><div class="w-full h-[2px] bg-tertiary-fixed shadow-[0_0_8px_#ffe07c]"></div></div><div class="w-full px-gutter-sm md:px-gutter lg:px-gutter-lg py-space-2xl"><div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-space-xl"><div class="flex flex-col gap-space-xs"><div class="flex items-center gap-space-sm"><span class="font-headline-md text-headline-md uppercase text-on-surface">TURBO·CRAFT</span><span class="px-space-sm py-space-xs bg-tertiary text-on-tertiary font-label-caps text-label-caps rounded-DEFAULT uppercase tracking-wider">First Edition</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-xl">Engineered by Maya Shankar. A Hot Wheels-themed portfolio built to showcase computer vision, AI, and web development projects with die-cast speed and style.</p></div><div class="flex flex-wrap items-center gap-space-lg"><a class="text-on-surface-variant hover:text-on-surface transition-colors font-label-caps text-label-caps uppercase" data-path="portfolio" href="#garage">The Garage</a><a class="text-on-surface-variant hover:text-on-surface transition-colors font-label-caps text-label-caps uppercase" data-path="telemetry" href="#telemetry">Engine Specs</a><a class="text-on-surface-variant hover:text-on-surface transition-colors font-label-caps text-label-caps uppercase" data-path="track-record" href="#track-record">Pit Milestones</a><a class="text-on-surface-variant hover:text-on-surface transition-colors font-label-caps text-label-caps uppercase" data-path="pit-stop" href="#pit-stop">Transmission</a></div></div><div class="mt-space-2xl pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md bg-surface-container-low/60 p-space-md rounded-DEFAULT"><div class="flex items-center gap-space-md"><span class="font-label-numeric text-label-numeric uppercase text-outline">STATUS: RACE READY</span><span class="hidden sm:inline-block w-1.5 h-1.5 rounded-full bg-secondary-container"></span><span class="font-label-numeric text-label-numeric text-on-surface-variant uppercase tracking-wider">Engineered for Speed &amp; Zero Drag</span></div><div class="flex items-center gap-space-sm"><span class="font-label-numeric text-label-numeric text-outline">© 2026 Maya Shankar. Pole Position Certified.</span></div></div></div></footer></body></html>

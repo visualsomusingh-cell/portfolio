@@ -1,0 +1,544 @@
+<!-- PARTIAL EXPORT — cut off at 50,000 char message limit, inside "Pit Crew Tools" card in the Skills/Telemetry section. Waiting on the rest from the user. -->
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Work+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "on-secondary-fixed": "#390c00",
+          "on-tertiary-fixed": "#231b00",
+          "on-secondary-container": "#511500",
+          "on-surface-variant": "#e9bcb6",
+          "outline": "#af8782",
+          "on-error-container": "#ffdad6",
+          "on-primary": "#690003",
+          "surface-container-lowest": "#0c0e12",
+          "surface-container-high": "#282a2e",
+          "on-secondary-fixed-variant": "#822700",
+          "surface-tint": "#ffb4aa",
+          "primary-fixed-dim": "#ffb4aa",
+          "inverse-primary": "#c0000d",
+          "on-tertiary": "#3b2f00",
+          "tertiary-fixed-dim": "#ecc200",
+          "tertiary-container": "#cca800",
+          "on-primary-fixed-variant": "#930007",
+          "tertiary-fixed": "#ffe07c",
+          "inverse-on-surface": "#2f3035",
+          "outline-variant": "#5f3f3b",
+          "background": "#111317",
+          "surface": "#111317",
+          "primary": "#ffb4aa",
+          "error": "#ffb4ab",
+          "on-primary-fixed": "#410001",
+          "secondary-fixed": "#ffdbcf",
+          "on-primary-container": "#fff7f6",
+          "inverse-surface": "#e2e2e8",
+          "secondary-container": "#ff5708",
+          "on-tertiary-container": "#4d3e00",
+          "on-background": "#e2e2e8",
+          "secondary-fixed-dim": "#ffb59c",
+          "surface-container-highest": "#333539",
+          "surface-dim": "#111317",
+          "surface-container": "#1e2024",
+          "primary-fixed": "#ffdad5",
+          "tertiary": "#ecc200",
+          "surface-bright": "#37393e",
+          "error-container": "#93000a",
+          "secondary": "#ffb59c",
+          "on-secondary": "#5c1900",
+          "on-tertiary-fixed-variant": "#564500",
+          "surface-container-low": "#1a1c20",
+          "surface-variant": "#333539",
+          "primary-container": "#e60012",
+          "on-surface": "#e2e2e8",
+          "on-error": "#690005"
+        },
+        "borderRadius": {
+          "DEFAULT": "0.125rem",
+          "lg": "0.25rem",
+          "xl": "0.5rem",
+          "full": "0.75rem"
+        },
+        "spacing": {
+          "margin-md": "3rem",
+          "space-md": "1rem",
+          "space-sm": "0.5rem",
+          "space-2xl": "4rem",
+          "gutter-sm": "1rem",
+          "space-xl": "2.5rem",
+          "gutter": "1.5rem",
+          "gutter-lg": "2rem",
+          "margin": "1.5rem",
+          "margin-lg": "5rem",
+          "space-xs": "0.25rem",
+          "space-lg": "1.5rem"
+        },
+        "fontFamily": {
+          "headline-lg": ["Anton"],
+          "headline-md": ["Anton"],
+          "label-numeric": ["Work Sans"],
+          "display-hero-mobile": ["Anton"],
+          "body-md": ["Work Sans"],
+          "label-caps": ["Anton"],
+          "body-sm": ["Work Sans"],
+          "title-lg": ["Anton"],
+          "body-lg": ["Work Sans"],
+          "headline-sm": ["Anton"],
+          "headline-lg-mobile": ["Anton"],
+          "display-hero": ["Anton"]
+        },
+        "fontSize": {
+          "headline-lg": ["48px", { "lineHeight": "52px", "letterSpacing": "0.03em", "fontWeight": "400" }],
+          "headline-md": ["32px", { "lineHeight": "36px", "letterSpacing": "0.04em", "fontWeight": "400" }],
+          "label-numeric": ["12px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "600" }],
+          "display-hero-mobile": ["48px", { "lineHeight": "52px", "letterSpacing": "0.02em", "fontWeight": "400" }],
+          "body-md": ["15px", { "lineHeight": "24px", "fontWeight": "400" }],
+          "label-caps": ["14px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "400" }],
+          "body-sm": ["13px", { "lineHeight": "20px", "fontWeight": "400" }],
+          "title-lg": ["20px", { "lineHeight": "24px", "letterSpacing": "0.05em", "fontWeight": "400" }],
+          "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+          "headline-sm": ["24px", { "lineHeight": "28px", "letterSpacing": "0.04em", "fontWeight": "400" }],
+          "headline-lg-mobile": ["32px", { "lineHeight": "36px", "letterSpacing": "0.04em", "fontWeight": "400" }],
+          "display-hero": ["80px", { "lineHeight": "84px", "letterSpacing": "0.02em", "fontWeight": "400" }]
+        }
+      },
+    },
+  }</script></head><body class="bg-background font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 left-0 w-full z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_12px_32px_-4px_rgba(230,0,18,0.25)]"><div class="w-full px-gutter-sm md:px-gutter lg:px-gutter-lg h-20 flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><div class="relative flex items-center justify-center"><div class="absolute -inset-1 bg-secondary-container/30 blur-md rounded-full pointer-events-none"></div><img alt="TurboCraft Hot Wheels Flame Logo" class="h-8 w-auto object-contain relative z-10" src="https://lh3.googleusercontent.com/aida/AEtjO1WIqqtHk4CpXhGpACgVsRKKINvBgHG4s3dIJzF2dM5dI7eLwb-0sNugrjz18URuaNalSjj7MGts2IlxNdooStzvY0cF6_Lvy_-bBH8Nk6pGZ14JYwOIjha7lqZy_Jp6b5yGZBcHHt5nLzfGWwY_JWbXqnnwXa3O0SkXOPY0QnUxS_CMkNZsNmCDTcBKg4YG-4UWJm1-WruS0baAFE-Tdnmcaw7Ryn3YH_MKXczACCjvH4PxPwqzMYW5P_kM"/></div><div class="flex flex-col"><span class="font-title-lg text-title-lg tracking-wider text-on-surface uppercase">TURBO<span class="text-secondary-container">·</span>CRAFT</span><span class="font-label-numeric text-label-numeric text-outline uppercase tracking-widest">Axel Vance // Visual Tech</span></div></div><nav class="hidden xl:flex items-center gap-space-xs p-space-xs bg-surface-container rounded-lg" data-active-classes="bg-primary-container text-on-primary-container font-headline-sm"><a aria-current="page" class="px-space-md py-space-xs transition-colors uppercase bg-primary-container text-on-primary-container font-headline-sm" data-path="portfolio" href="#">Garage</a><a class="px-space-md py-space-xs text-on-surface-variant hover:text-on-surface transition-colors font-label-caps text-label-caps uppercase" data-path="collector-editions" href="#">Blister Pack</a><a class="px-space-md py-space-xs text-on-surface-variant hover:text-on-surface transition-colors font-label-caps text-label-caps uppercase" data-path="telemetry" href="#">Telemetry</a><a class="px-space-md py-space-xs text-on-surface-variant hover:text-on-surface transition-colors font-label-caps text-label-caps uppercase" data-path="track-record" href="#">Track Record</a><a class="px-space-md py-space-xs text-on-surface-variant hover:text-on-surface transition-colors font-label-caps text-label-caps uppercase" data-path="pit-stop" href="#">Pit Stop</a></nav><div class="flex items-center gap-space-md"><button class="hidden sm:inline-flex items-center gap-space-xs px-space-md py-space-xs rounded-DEFAULT bg-surface-container-high hover:bg-surface-container-highest transition-all shadow-[0_0_16px_rgba(236,194,0,0.2)] text-tertiary font-label-caps text-label-caps uppercase" type="button"><span class="material-symbols-outlined text-[16px]">speed</span><span>Nitro Boost</span></button><a class="inline-flex items-center px-space-lg py-space-xs bg-gradient-to-r from-secondary-container to-primary-container hover:from-primary-container hover:to-secondary-container text-on-primary-container font-label-caps text-label-caps uppercase tracking-wider rounded-DEFAULT shadow-[0_12px_32px_-4px_rgba(230,0,18,0.45)] transform -skew-x-6 hover:translate-y-[-1px] transition-transform" data-path="pit-stop" href="#"><span class="transform skew-x-6">Hire Pit Crew</span></a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shadow-[0_0_8px_rgba(255,180,170,0.4)]"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full overflow-hidden">
+<!-- Top Speed Ribbon Decal -->
+<div class="w-full flex h-1.5 bg-surface-container-lowest">
+<div class="w-1/3 bg-secondary-container"></div>
+<div class="w-1/3 bg-tertiary"></div>
+<div class="w-1/3 bg-primary-container"></div>
+</div>
+<!-- SECTION 1: HERO (Ignition & Launch Ramp) -->
+<section class="relative w-full px-gutter-sm md:px-gutter lg:px-gutter-lg pt-space-xl pb-space-2xl bg-surface">
+<div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-secondary-container/15 blur-[120px] pointer-events-none rounded-full"></div>
+<div class="absolute top-1/3 right-10 w-[400px] h-[250px] bg-primary-container/20 blur-[100px] pointer-events-none rounded-full"></div>
+<div class="relative z-10 max-w-7xl mx-auto flex flex-col items-center">
+<div class="flex flex-wrap items-center justify-center gap-space-sm mb-space-md">
+<span class="px-space-sm py-space-xs bg-primary-container text-on-primary-container font-label-caps text-label-caps uppercase rounded-DEFAULT shadow-sm -skew-x-6 inline-block">
+<span class="skew-x-6 inline-block">FIRST EDITION // NO. 01/24</span>
+</span>
+<span class="px-space-sm py-space-xs bg-tertiary text-on-tertiary font-label-caps text-label-caps uppercase rounded-DEFAULT shadow-sm -skew-x-6 inline-block font-semibold">
+<span class="skew-x-6 inline-block">DIE-CAST HIGH VELOCITY</span>
+</span>
+<div class="flex items-center gap-space-xs px-space-sm py-space-xs bg-surface-container-high rounded-DEFAULT text-tertiary">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-ping"></span>
+<span class="font-label-numeric text-label-numeric uppercase tracking-wider text-on-surface">10,000+ BHP DIGITAL ENGINE</span>
+</div>
+</div>
+<h1 class="text-center font-display-hero text-headline-lg md:text-display-hero tracking-normal uppercase text-on-surface mb-space-xs">
+        HOT WHEELS <span class="text-transparent bg-clip-text bg-gradient-to-r from-secondary-container via-tertiary to-primary-container">ENGINEERED</span>
+</h1>
+<p class="text-center font-headline-md text-headline-sm md:text-headline-md uppercase text-secondary-container tracking-wider -mt-space-xs mb-space-md">
+        FULL THROTTLE CREATIVE DEVELOPMENT
+      </p>
+<p class="max-w-2xl text-center font-body-lg text-body-md md:text-body-lg text-on-surface-variant mb-space-xl">
+        Crafting blistering WebGL experiences, 3D interactive engines, and ultra-responsive digital speed machines that smoke the competition right off the starting grid.
+      </p>
+<div class="flex flex-wrap items-center justify-center gap-space-md mb-space-2xl">
+<a class="inline-flex items-center gap-space-sm px-space-xl py-space-md bg-gradient-to-r from-secondary-container via-primary-container to-secondary-container text-on-primary-container font-label-caps text-headline-sm uppercase tracking-wider rounded-DEFAULT shadow-[0_16px_36px_-6px_rgba(255,87,8,0.5)] transform -skew-x-6 hover:scale-105 transition-all" href="#garage">
+<span class="skew-x-6 flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-[20px]">local_fire_department</span>
+<span>EXPLORE THE GARAGE (0-100 MPH)</span>
+</span>
+</a>
+<a class="inline-flex items-center gap-space-sm px-space-xl py-space-md bg-surface-container-high hover:bg-surface-container-highest text-on-surface font-label-caps text-headline-sm uppercase tracking-wider rounded-DEFAULT shadow-md transform -skew-x-6 hover:scale-105 transition-all" href="#telemetry">
+<span class="skew-x-6 flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-[20px]">tune</span>
+<span>INSPECT TELEMETRY</span>
+</span>
+</a>
+</div>
+<div class="relative w-full max-w-5xl rounded-xl p-space-xs bg-gradient-to-b from-secondary-container/40 via-surface-container-high to-surface-container-lowest shadow-[0_24px_50px_-12px_rgba(0,0,0,0.9)]">
+<div class="flex justify-center items-center pt-space-sm pb-space-xs">
+<div class="w-20 h-4 bg-surface-container-lowest rounded-full flex items-center justify-center shadow-inner">
+<div class="w-10 h-1.5 bg-surface-container-high rounded-full"></div>
+</div>
+</div>
+<div class="px-space-md py-space-xs flex items-center justify-between bg-surface-container-lowest/80 rounded-DEFAULT mx-space-xs mb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-secondary-container tracking-wider uppercase">TURBO RACER //</span>
+<span class="font-label-numeric text-label-numeric text-tertiary">TRACK-TUNED FIRST RUN EDITION</span>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="px-space-xs py-0.5 bg-surface-container-highest text-on-surface-variant font-label-numeric text-label-numeric rounded-DEFAULT">SERIES #08/250</span>
+<span class="px-space-xs py-0.5 bg-secondary-container text-on-secondary-container font-label-numeric text-label-numeric rounded-DEFAULT font-bold">REAL RIDERS ®</span>
+</div>
+</div>
+<div class="relative overflow-hidden rounded-lg bg-surface-container-lowest shadow-2xl group">
+<img alt="Die-cast twin engine hot rod on looping orange race track" class="w-full h-auto max-h-[540px] object-cover object-center transform group-hover:scale-[1.02] transition-transform duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDlmfhEBmKwSuEdYI_Ul7Gzo-javQV5rgbuVzwdTkuqBPpTckGnfSSr8maD0mwtJhPsvKtEYD9XF8uP9F9rrXj__NFRPmZkZGDL71Zg0RBJ03_r_eJOR5vc4veQhvipvpMlUpyV9qOgXSb1X6NhAwmQfJ8jCJt0GEOYL1eiXuMx3Q-RMD9_24NbBffCyxf4MeMd07k284fZ783o3aKrCMGT7nghOosLGLJaUTTjQOno79J73q2rHLmPg"/>
+<div class="absolute inset-0 pointer-events-none bg-gradient-to-tr from-transparent via-white/5 to-white/10 opacity-70"></div>
+<div class="absolute top-0 left-0 right-0 h-12 bg-gradient-to-b from-white/15 to-transparent pointer-events-none"></div>
+<div class="absolute bottom-space-md left-space-md bg-surface-container-lowest/90 backdrop-blur-md p-space-md rounded-lg shadow-xl max-w-xs">
+<div class="flex items-center justify-between gap-space-md mb-space-xs">
+<span class="font-label-caps text-label-caps text-on-surface uppercase">TWIN MILL TITANIUM</span>
+<span class="px-space-xs bg-primary-container text-on-primary-container font-label-numeric text-label-numeric rounded-DEFAULT">REDLINE 9.4K</span>
+</div>
+<div class="w-full bg-surface-container-high h-2 rounded-full overflow-hidden mb-space-xs">
+<div class="bg-gradient-to-r from-tertiary via-secondary-container to-primary-container h-full w-[94%]"></div>
+</div>
+<div class="flex justify-between font-label-numeric text-label-numeric text-outline">
+<span>OCTANE: 104+</span>
+<span>CHASSIS: DIE-CAST ZAMAC</span>
+</div>
+</div>
+<div class="absolute top-space-md right-space-md bg-surface-container-lowest/90 backdrop-blur-md px-space-md py-space-xs rounded-lg shadow-xl flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-tertiary text-[18px]">verified</span>
+<span class="font-label-caps text-label-caps text-on-surface uppercase">MINT PACKAGING GRADE 10.0</span>
+</div>
+</div>
+</div>
+<div class="w-full max-w-5xl grid grid-cols-2 md:grid-cols-4 gap-space-sm mt-space-lg">
+<div class="p-space-md bg-surface-container rounded-lg shadow-md flex flex-col justify-between">
+<div class="flex items-center justify-between text-outline mb-space-xs">
+<span class="font-label-numeric text-label-numeric uppercase">SPEED TRAP</span>
+<span class="material-symbols-outlined text-[18px] text-secondary-container">speed</span>
+</div>
+<div>
+<div class="font-headline-md text-headline-md text-on-surface">0.18s</div>
+<div class="font-label-numeric text-label-numeric text-on-surface-variant">Browser First Paint Load</div>
+</div>
+</div>
+<div class="p-space-md bg-surface-container rounded-lg shadow-md flex flex-col justify-between">
+<div class="flex items-center justify-between text-outline mb-space-xs">
+<span class="font-label-numeric text-label-numeric uppercase">TRACK LOOPS</span>
+<span class="material-symbols-outlined text-[18px] text-tertiary">all_inclusive</span>
+</div>
+<div>
+<div class="font-headline-md text-headline-md text-on-surface">60+</div>
+<div class="font-label-numeric text-label-numeric text-on-surface-variant">WebGL Circuits Shipped</div>
+</div>
+</div>
+<div class="p-space-md bg-surface-container rounded-lg shadow-md flex flex-col justify-between">
+<div class="flex items-center justify-between text-outline mb-space-xs">
+<span class="font-label-numeric text-label-numeric uppercase">PODIUM TROPHIES</span>
+<span class="material-symbols-outlined text-[18px] text-primary">emoji_events</span>
+</div>
+<div>
+<div class="font-headline-md text-headline-md text-on-surface">12 AWARDS</div>
+<div class="font-label-numeric text-label-numeric text-on-surface-variant">Awwwards &amp; FWA Honors</div>
+</div>
+</div>
+<div class="p-space-md bg-surface-container rounded-lg shadow-md flex flex-col justify-between">
+<div class="flex items-center justify-between text-outline mb-space-xs">
+<span class="font-label-numeric text-label-numeric uppercase">DIE-CAST SPECS</span>
+<span class="material-symbols-outlined text-[18px] text-secondary">verified</span>
+</div>
+<div>
+<div class="font-headline-md text-headline-md text-on-surface">99.9%</div>
+<div class="font-label-numeric text-label-numeric text-on-surface-variant">FPS Retention &amp; Precision</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div class="w-full flex flex-col gap-[2px] bg-surface-container-lowest py-space-sm px-gutter-sm md:px-gutter lg:px-gutter-lg">
+<div class="w-full h-[2px] bg-secondary-container"></div>
+<div class="w-full h-[2px] bg-tertiary"></div>
+<div class="w-full h-[2px] bg-primary-container"></div>
+</div>
+<!-- SECTION 2: PROJECT SHOWCASE (The Collector Garage - Blister Pack Editions) -->
+<section class="relative w-full px-gutter-sm md:px-gutter lg:px-gutter-lg py-space-2xl bg-surface-container-lowest" id="garage">
+<div class="max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row items-start md:items-end justify-between gap-space-md mb-space-xl">
+<div>
+<div class="flex items-center gap-space-xs mb-space-xs">
+<span class="material-symbols-outlined text-secondary-container text-[24px]">local_fire_department</span>
+<span class="font-label-caps text-label-caps text-secondary-container uppercase tracking-wider">TRACK ARCHIVE // 2025 SERIES</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg uppercase text-on-surface">THE GARAGE: FIRST EDITIONS</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Every project packaged in mint-condition collector blister cards with verified die-cast technical telemetry.</p>
+</div>
+<div class="flex flex-wrap items-center gap-space-xs bg-surface-container p-space-xs rounded-lg" id="filter-container">
+<button class="filter-btn active px-space-md py-space-xs bg-primary-container text-on-primary-container font-label-caps text-label-caps uppercase rounded-DEFAULT shadow-sm" type="button">ALL SERIES</button>
+<button class="filter-btn px-space-md py-space-xs text-on-surface-variant hover:text-on-surface font-label-caps text-label-caps uppercase rounded-DEFAULT transition-colors" type="button">3D &amp; WEBGL</button>
+<button class="filter-btn px-space-md py-space-xs text-on-surface-variant hover:text-on-surface font-label-caps text-label-caps uppercase rounded-DEFAULT transition-colors" type="button">HIGH-OCTANE APPS</button>
+<button class="filter-btn px-space-md py-space-xs text-on-surface-variant hover:text-on-surface font-label-caps text-label-caps uppercase rounded-DEFAULT transition-colors" type="button">TURBO SHADERS</button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-lg">
+<!-- CARD 1: Twin Mill Nitro Engine -->
+<div class="group relative rounded-xl bg-surface-container p-space-sm shadow-xl hover:shadow-[0_16px_40px_-8px_rgba(255,87,8,0.4)] transition-all duration-300 flex flex-col justify-between">
+<div class="bg-gradient-to-r from-surface-container-high via-surface-container-highest to-surface-container-high p-space-md rounded-t-lg mb-space-xs flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-3 bg-surface-container-lowest rounded-full flex items-center justify-center">
+<div class="w-5 h-1 bg-surface-container-highest rounded-full"></div>
+</div>
+<span class="font-headline-sm text-headline-sm uppercase text-tertiary">SERIES #01/25</span>
+</div>
+<span class="px-space-sm py-space-xs bg-primary-container text-on-primary-container font-label-caps text-label-caps uppercase rounded-DEFAULT -skew-x-6">HOT GRAPHICS</span>
+</div>
+<div class="relative rounded-lg overflow-hidden bg-surface-container-lowest aspect-video flex items-center justify-center group-hover:ring-1 group-hover:ring-secondary-container transition-all">
+<img class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" data-alt="Futuristic high performance red sports car inside a neon illuminated cyber garage with glowing underbody nitrous lights and orange tracks in the background, cinematic 3D render, Hot Wheels aesthetics" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAZ_epNQ8AbY6cjS_Xze6fYKnKiMU-SfzoE2F0T7MNRmf7RoghhWvaRI2krcACnZi2xe4UsuiQdVYBDhtzYnHfO53mgdSxtrz9gxQPAGcT17jHLTYsSoeEKeusYONHvA4O5ygMRkXbcCXgTGY3kYA9eGrwtVNMdMMI3HLrIWwF7L19jTkFjZ058HQVvLHQ7lAjSX09aZgJ67n-Hnl5_o0eIJY6gh3Em_DahrlELQLioldiXbV2ucbZypQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent opacity-80"></div>
+<div class="absolute top-space-sm left-space-sm px-space-sm py-space-xs bg-surface-container-lowest/80 backdrop-blur-md rounded-DEFAULT flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span>
+<span class="font-label-numeric text-label-numeric text-on-surface uppercase">60 FPS WEBGL</span>
+</div>
+<div class="absolute bottom-space-sm right-space-sm">
+<span class="px-space-sm py-space-xs bg-secondary-container text-on-secondary-container font-label-caps text-label-caps uppercase rounded-DEFAULT shadow-md">LIVE 3D SIM</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-md text-headline-md uppercase text-on-surface group-hover:text-secondary-container transition-colors">TWIN MILL NITRO ENGINE</h3>
+<span class="font-label-numeric text-label-numeric text-tertiary">SPEED: 10 / 10</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">WebGL 3D interactive car configurator with real-time custom paint shader mixing, specular reflections, and responsive exhaust audio synthesis.</p>
+<div class="flex flex-wrap gap-space-xs pt-space-xs">
+<span class="px-space-xs py-0.5 bg-surface-container-highest font-label-numeric text-label-numeric text-on-surface-variant rounded-DEFAULT">Three.js</span>
+<span class="px-space-xs py-0.5 bg-surface-container-highest font-label-numeric text-label-numeric text-on-surface-variant rounded-DEFAULT">GLSL Shaders</span>
+<span class="px-space-xs py-0.5 bg-surface-container-highest font-label-numeric text-label-numeric text-on-surface-variant rounded-DEFAULT">WebGPU Ready</span>
+<span class="px-space-xs py-0.5 bg-surface-container-highest font-label-numeric text-label-numeric text-on-surface-variant rounded-DEFAULT">AudioContext API</span>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<a class="inline-flex items-center gap-space-xs text-secondary-container hover:text-tertiary font-label-caps text-label-caps uppercase transition-colors" href="#">
+<span>LAUNCH SIMULATOR</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+<span class="font-label-numeric text-label-numeric text-outline">CHASSIS REF: 884-TM</span>
+</div>
+</div>
+</div>
+<!-- CARD 2: Velocity Loop Runner -->
+<div class="group relative rounded-xl bg-surface-container p-space-sm shadow-xl hover:shadow-[0_16px_40px_-8px_rgba(236,194,0,0.4)] transition-all duration-300 flex flex-col justify-between">
+<div class="bg-gradient-to-r from-surface-container-high via-surface-container-highest to-surface-container-high p-space-md rounded-t-lg mb-space-xs flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-3 bg-surface-container-lowest rounded-full flex items-center justify-center">
+<div class="w-5 h-1 bg-surface-container-highest rounded-full"></div>
+</div>
+<span class="font-headline-sm text-headline-sm uppercase text-tertiary">SERIES #02/25</span>
+</div>
+<span class="px-space-sm py-space-xs bg-tertiary text-on-tertiary font-label-caps text-label-caps uppercase rounded-DEFAULT -skew-x-6">TRACK ACES</span>
+</div>
+<div class="relative rounded-lg overflow-hidden bg-surface-container-lowest aspect-video flex items-center justify-center group-hover:ring-1 group-hover:ring-tertiary transition-all">
+<img class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" data-alt="Infinite spiraling orange toy race track with high banked turn curves looping into a futuristic retro synthwave city sunset with neon lasers and speed motion blurs" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3b9WSFJvdT3cp_m-WDrJA3qJMBpALh2Ne8PWhlf35jZazwrjCopdMDe1tPFcgcro0oFc066CUcVm9v4-Y7Zscu0Fr2GwIACNYP8KsCeFTwuc1ppgNiJYnFmb8-ojVrlPK9fsueuObRRZLqgb5OZKcY5EsNS0hjlno8EzbWeyEDTOLm2gd1FcEHna_qc2aIOBZeAjU_1_ab7z6XolxDcSCioMLu39w6gj-1DSPUkrxxccYNQccVhTkJw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent opacity-80"></div>
+<div class="absolute top-space-sm left-space-sm px-space-sm py-space-xs bg-surface-container-lowest/80 backdrop-blur-md rounded-DEFAULT flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-tertiary animate-ping"></span>
+<span class="font-label-numeric text-label-numeric text-on-surface uppercase">120 FPS NATIVE</span>
+</div>
+<div class="absolute bottom-space-sm right-space-sm">
+<span class="px-space-sm py-space-xs bg-tertiary text-on-tertiary font-label-caps text-label-caps uppercase rounded-DEFAULT shadow-md">ARCADE GAME</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-md text-headline-md uppercase text-on-surface group-hover:text-tertiary transition-colors">VELOCITY LOOP RUNNER</h3>
+<span class="font-label-numeric text-label-numeric text-secondary">HANDLING: 9.8 / 10</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Infinite procedural track game engine running directly in browser viewport. Features collision gravity calculations and responsive mobile gyroscopic steering.</p>
+<div class="flex flex-wrap gap-space-xs pt-space-xs">
+<span class="px-space-xs py-0.5 bg-surface-container-highest font-label-numeric text-label-numeric text-on-surface-variant rounded-DEFAULT">HTML5 Canvas</span>
+<span class="px-space-xs py-0.5 bg-surface-container-highest font-label-numeric text-label-numeric text-on-surface-variant rounded-DEFAULT">WebAssembly (Rust)</span>
+<span class="px-space-xs py-0.5 bg-surface-container-highest font-label-numeric text-label-numeric text-on-surface-variant rounded-DEFAULT">Pixi.js</span>
+<span class="px-space-xs py-0.5 bg-surface-container-highest font-label-numeric text-label-numeric text-on-surface-variant rounded-DEFAULT">Gamepad API</span>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<a class="inline-flex items-center gap-space-xs text-tertiary hover:text-secondary-container font-label-caps text-label-caps uppercase transition-colors" href="#">
+<span>START TIME TRIAL</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+<span class="font-label-numeric text-label-numeric text-outline">CHASSIS REF: 412-VLR</span>
+</div>
+</div>
+</div>
+<!-- CARD 3: Super-Treasure Vault -->
+<div class="group relative rounded-xl bg-surface-container p-space-sm shadow-xl hover:shadow-[0_16px_40px_-8px_rgba(230,0,18,0.4)] transition-all duration-300 flex flex-col justify-between">
+<div class="bg-gradient-to-r from-surface-container-high via-surface-container-highest to-surface-container-high p-space-md rounded-t-lg mb-space-xs flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-3 bg-surface-container-lowest rounded-full flex items-center justify-center">
+<div class="w-5 h-1 bg-surface-container-highest rounded-full"></div>
+</div>
+<span class="font-headline-sm text-headline-sm uppercase text-tertiary">SERIES #03/25</span>
+</div>
+<span class="px-space-sm py-space-xs bg-secondary-container text-on-secondary-container font-label-caps text-label-caps uppercase rounded-DEFAULT -skew-x-6 font-bold">TREASURE HUNT</span>
+</div>
+<div class="relative rounded-lg overflow-hidden bg-surface-container-lowest aspect-video flex items-center justify-center group-hover:ring-1 group-hover:ring-primary-container transition-all">
+<img class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" data-alt="High tech digital vault with gold plated collector die-cast racing car rotating on a floating holographic pedestal surrounded by glowing telemetry graphs and auction bid counters" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCl1qsWsrpofMukuTmBpxaHR2ocSYlyYhpe5cbffTrhhw4vYl-MSETNL_Kb_yhwJbems5FVPROEUeIRVp422WNb8VEq8IZtPH91xQulIImzT7jiAsP5wF_s9Dy5BzyodHpA8T64_txjWOIFdEV5pbhyTdi4VhxFtsTvZKz4awU3Nov5ejyccIBwADP6LUx8uEt4CXZ7ctFWVUqjL23umOIR0ECC1sCCuug49nQCZXzGSuKFup_53xC74A"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent opacity-80"></div>
+<div class="absolute top-space-sm left-space-sm px-space-sm py-space-xs bg-surface-container-lowest/80 backdrop-blur-md rounded-DEFAULT flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-label-numeric text-label-numeric text-on-surface uppercase">WEBSOCKET SYNC</span>
+</div>
+<div class="absolute bottom-space-sm right-space-sm">
+<span class="px-space-sm py-space-xs bg-primary-container text-on-primary-container font-label-caps text-label-caps uppercase rounded-DEFAULT shadow-md">AUCTION PLATFORM</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-md text-headline-md uppercase text-on-surface group-hover:text-primary-container transition-colors">SUPER-TREASURE VAULT</h3>
+<span class="font-label-numeric text-label-numeric text-tertiary">ACCELERATION: 10 / 10</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Gamified digital collector marketplace with real-time synchronized auctions, interactive 3D model inspector, and live bidding telemetry streams.</p>
+<div class="flex flex-wrap gap-space-xs pt-space-xs">
+<span class="px-space-xs py-0.5 bg-surface-container-highest font-label-numeric text-label-numeric text-on-surface-variant rounded-DEFAULT">Next.js 14</span>
+<span class="px-space-xs py-0.5 bg-surface-container-highest font-label-numeric text-label-numeric text-on-surface-variant rounded-DEFAULT">WebSockets</span>
+<span class="px-space-xs py-0.5 bg-surface-container-highest font-label-numeric text-label-numeric text-on-surface-variant rounded-DEFAULT">Tailwind CSS</span>
+<span class="px-space-xs py-0.5 bg-surface-container-highest font-label-numeric text-label-numeric text-on-surface-variant rounded-DEFAULT">Supabase Live</span>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<a class="inline-flex items-center gap-space-xs text-primary-container hover:text-secondary-container font-label-caps text-label-caps uppercase transition-colors" href="#">
+<span>INSPECT PACKAGING</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+<span class="font-label-numeric text-label-numeric text-outline">CHASSIS REF: STH-009</span>
+</div>
+</div>
+</div>
+<!-- CARD 4: Cyber Track Telemetry -->
+<div class="group relative rounded-xl bg-surface-container p-space-sm shadow-xl hover:shadow-[0_16px_40px_-8px_rgba(255,87,8,0.4)] transition-all duration-300 flex flex-col justify-between">
+<div class="bg-gradient-to-r from-surface-container-high via-surface-container-highest to-surface-container-high p-space-md rounded-t-lg mb-space-xs flex items-center justify-between">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-3 bg-surface-container-lowest rounded-full flex items-center justify-center">
+<div class="w-5 h-1 bg-surface-container-highest rounded-full"></div>
+</div>
+<span class="font-headline-sm text-headline-sm uppercase text-tertiary">SERIES #04/25</span>
+</div>
+<span class="px-space-sm py-space-xs bg-surface-container-highest text-on-surface font-label-caps text-label-caps uppercase rounded-DEFAULT -skew-x-6">RACE HUD</span>
+</div>
+<div class="relative rounded-lg overflow-hidden bg-surface-container-lowest aspect-video flex items-center justify-center group-hover:ring-1 group-hover:ring-secondary-container transition-all">
+<img class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" data-alt="High tech motorsport telemetry screen showing colorful speedometer tachometers, dynamic lap delta lines, tire heat temperature maps, and G-force vectors on dark carbon fiber texture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBabwAeVstoFqZ2bzpR6xdwJzcl08BRDJYuzEGoqKiXUAodY3Mgp-sglOMCI-I-IRPHshoXPxFHNOt2oTfTHmRl7xy21iURIdM7mnF4kItWdxrl8Q1tbthFzyAdFhLPHltwIwG4G4rYNWYpCvWl7xXo98PqGPObglAXp5yvBh0ldn3nE9FKzJUXAlFXBQ2ylMu0aTh_iLDEVar6sT7EjN8VMdmFO-4EDSbU3OH42QUToQnrGOWuNQrk-g"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest via-transparent to-transparent opacity-80"></div>
+<div class="absolute top-space-sm left-space-sm px-space-sm py-space-xs bg-surface-container-lowest/80 backdrop-blur-md rounded-DEFAULT flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span>
+<span class="font-label-numeric text-label-numeric text-on-surface uppercase">REAL-TIME DATA</span>
+</div>
+<div class="absolute bottom-space-sm right-space-sm">
+<span class="px-space-sm py-space-xs bg-surface-container-highest text-on-surface font-label-caps text-label-caps uppercase rounded-DEFAULT shadow-md">DASHBOARD</span>
+</div>
+</div>
+<div class="p-space-md flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-md text-headline-md uppercase text-on-surface group-hover:text-secondary-container transition-colors">CYBER TRACK TELEMETRY</h3>
+<span class="font-label-numeric text-label-numeric text-tertiary">AERO: 9.5 / 10</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Real-time professional racing telemetry dashboard with neon HUD tachometer gauges, tire temperature delta heatmaps, and lap playback analytics.</p>
+<div class="flex flex-wrap gap-space-xs pt-space-xs">
+<span class="px-space-xs py-0.5 bg-surface-container-highest font-label-numeric text-label-numeric text-on-surface-variant rounded-DEFAULT">TypeScript</span>
+<span class="px-space-xs py-0.5 bg-surface-container-highest font-label-numeric text-label-numeric text-on-surface-variant rounded-DEFAULT">D3.js DataViz</span>
+<span class="px-space-xs py-0.5 bg-surface-container-highest font-label-numeric text-label-numeric text-on-surface-variant rounded-DEFAULT">WebAudio API</span>
+<span class="px-space-xs py-0.5 bg-surface-container-highest font-label-numeric text-label-numeric text-on-surface-variant rounded-DEFAULT">State Machines</span>
+</div>
+<div class="pt-space-sm flex items-center justify-between">
+<a class="inline-flex items-center gap-space-xs text-secondary-container hover:text-tertiary font-label-caps text-label-caps uppercase transition-colors" href="#">
+<span>VIEW LIVE GAUGES</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+<span class="font-label-numeric text-label-numeric text-outline">CHASSIS REF: 902-HUD</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 3: SKILLS & ENGINE BAY (Under The Hood - Telemetry & Tuning) -->
+<section class="relative w-full px-gutter-sm md:px-gutter lg:px-gutter-lg py-space-2xl bg-surface" id="telemetry">
+<div class="absolute bottom-0 left-1/4 w-[500px] h-[300px] bg-secondary-container/10 blur-[140px] pointer-events-none rounded-full"></div>
+<div class="max-w-7xl mx-auto relative z-10">
+<div class="mb-space-xl">
+<div class="flex items-center gap-space-xs mb-space-xs">
+<span class="material-symbols-outlined text-tertiary text-[24px]">tune</span>
+<span class="font-label-caps text-label-caps text-tertiary uppercase tracking-wider">DYNO DIAGNOSTIC BENCH</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg uppercase text-on-surface">UNDER THE HOOD: TUNING SPECS</h2>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">Benchmarked engineering stack configured for maximum frame throughput, zero aerodynamic latency, and explosive visual impact.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- Module 1: Combustion Engine -->
+<div class="p-space-lg bg-surface-container-low rounded-lg shadow-lg flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute top-0 right-0 w-24 h-24 bg-primary-container/10 rounded-full blur-xl pointer-events-none"></div>
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-label-caps text-label-caps text-secondary-container uppercase">STAGE 3 CAMSHAFT</span>
+<span class="material-symbols-outlined text-primary-container text-[28px]">speed</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface mb-space-xs">COMBUSTION ENGINE</h3>
+<p class="font-label-numeric text-label-numeric text-outline uppercase mb-space-md">Frontend Core &amp; WebGL</p>
+<ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant mb-space-lg">
+<li class="flex items-center justify-between"><span>Three.js / React Three Fiber</span><span class="text-tertiary font-label-numeric">100%</span></li>
+<li class="flex items-center justify-between"><span>Custom GLSL Shaders</span><span class="text-tertiary font-label-numeric">98%</span></li>
+<li class="flex items-center justify-between"><span>WebGPU Experimental</span><span class="text-tertiary font-label-numeric">92%</span></li>
+<li class="flex items-center justify-between"><span>React / Next.js / Astro</span><span class="text-tertiary font-label-numeric">99%</span></li>
+<li class="flex items-center justify-between"><span>GSAP ScrollTrigger Velocity</span><span class="text-tertiary font-label-numeric">99%</span></li>
+</ul>
+</div>
+<div>
+<div class="flex items-center justify-between font-label-numeric text-label-numeric text-outline mb-space-xs">
+<span>NITRO BOOST LEVEL</span>
+<span class="text-primary-container font-bold">99% FLOW</span>
+</div>
+<div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-secondary-container to-primary-container w-[99%]"></div>
+</div>
+</div>
+</div>
+<!-- Module 2: Twin Superchargers -->
+<div class="p-space-lg bg-surface-container-low rounded-lg shadow-lg flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute top-0 right-0 w-24 h-24 bg-tertiary/10 rounded-full blur-xl pointer-events-none"></div>
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-label-caps text-label-caps text-tertiary uppercase">FORCED INDUCTION</span>
+<span class="material-symbols-outlined text-tertiary text-[28px]">air</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface mb-space-xs">TWIN CHARGERS</h3>
+<p class="font-label-numeric text-label-numeric text-outline uppercase mb-space-md">Direction &amp; UX Motion</p>
+<ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant mb-space-lg">
+<li class="flex items-center justify-between"><span>Kinetic Typography &amp; Slants</span><span class="text-tertiary font-label-numeric">97%</span></li>
+<li class="flex items-center justify-between"><span>3D Die-Cast Asset Rigging</span><span class="text-tertiary font-label-numeric">94%</span></li>
+<li class="flex items-center justify-between"><span>Engine Audio / Web SFX</span><span class="text-tertiary font-label-numeric">92%</span></li>
+<li class="flex items-center justify-between"><span>Interactive Micro-physics</span><span class="text-tertiary font-label-numeric">96%</span></li>
+<li class="flex items-center justify-between"><span>Speed-line Choreography</span><span class="text-tertiary font-label-numeric">98%</span></li>
+</ul>
+</div>
+<div>
+<div class="flex items-center justify-between font-label-numeric text-label-numeric text-outline mb-space-xs">
+<span>OCTANE MIX</span>
+<span class="text-tertiary font-bold">95% RATING</span>
+</div>
+<div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-secondary-container via-tertiary to-tertiary w-[95%]"></div>
+</div>
+</div>
+</div>
+<!-- Module 3: Chassis & Aerodynamics -->
+<div class="p-space-lg bg-surface-container-low rounded-lg shadow-lg flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute top-0 right-0 w-24 h-24 bg-secondary/10 rounded-full blur-xl pointer-events-none"></div>
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-label-caps text-label-caps text-secondary uppercase">WIND TUNNEL TUNED</span>
+<span class="material-symbols-outlined text-secondary text-[28px]">flare</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface mb-space-xs">CHASSIS &amp; AERO</h3>
+<p class="font-label-numeric text-label-numeric text-outline uppercase mb-space-md">Architecture &amp; Vitals</p>
+<ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant mb-space-lg">
+<li class="flex items-center justify-between"><span>Zero Cumulative Layout Shift</span><span class="text-tertiary font-label-numeric">100%</span></li>
+<li class="flex items-center justify-between"><span>Edge Network Hydration</span><span class="text-tertiary font-label-numeric">98%</span></li>
+<li class="flex items-center justify-between"><span>Lighthouse Core Vitals 99+</span><span class="text-tertiary font-label-numeric">99%</span></li>
+<li class="flex items-center justify-between"><span>Progressive Web App Offline</span><span class="text-tertiary font-label-numeric">95%</span></li>
+<li class="flex items-center justify-between"><span>GPU Draw Call Optimization</span><span class="text-tertiary font-label-numeric">97%</span></li>
+</ul>
+</div>
+<div>
+<div class="flex items-center justify-between font-label-numeric text-label-numeric text-outline mb-space-xs">
+<span>DOWNFORCE PRESSURE</span>
+<span class="text-secondary font-bold">98% LATCH</span>
+</div>
+<div class="w-full bg-surface-container-highest h-2 rounded-full overflow-hidden">
+<div class="h-full bg-gradient-to-r from-tertiary to-secondary w-[98%]"></div>
+</div>
+</div>
+</div>
+<!-- Module 4: Pit Crew Toolkit (CUT OFF HERE — needs continuation from user) -->
+<div class="p-space-lg bg-surface-container-low rounded-lg shadow-lg flex flex-col justify-between relative overflow-hidden group">
+<div class="absolute top-0 right-0 w-24 h-24 bg-outline/10 rounded-full blur-xl pointer-events-none"></div>
+<div>
+<div class="flex items-center justify-between mb-space-md">
+<span class="font-label-caps text-label-caps text-outline uppercase">PIT WORKSHOP</span>
+<span class="material-symbols-outlined text-outline text-[28px]">handyman</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm uppercase text-on-surface mb-space-xs">PIT CREW TOOLS</h3>
+<!-- TRUNCATED HERE -->
